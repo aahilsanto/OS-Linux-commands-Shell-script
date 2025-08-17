@@ -53,14 +53,18 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+
+![alt text](3.png)
+
 comm file1 file2
  ## OUTPUT
 
+![alt text](4.png)
  
 diff file1 file2
 ## OUTPUT
 
+![alt text](5.png)
 
 #Filters
 
@@ -84,17 +88,18 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-
+![alt text](6.png)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-
+![alt text](7.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
+![alt text](8.png)
 
 cat < newfile 
 ```
@@ -109,7 +114,7 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-
+![alt text](9.png)
 
 grep hello newfile 
 ## OUTPUT
