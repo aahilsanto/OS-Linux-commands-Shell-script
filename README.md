@@ -496,13 +496,15 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+
+![alt text](60.png)
+
 abcd
  
 echo $?
  ## OUTPUT
 
-
+![alt text](61.png)
  
 # mis-using string comparisons
 
@@ -534,13 +536,14 @@ fi
 ```
 ##OUTPUT
 
-
+![alt text](62.png)
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
 
+![alt text](63.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -567,6 +570,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+
+![alt text](64.png)
 
 # check if with file location
 cat>ifnested.sh 
@@ -614,7 +619,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-
+![alt text](65.png)
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -657,6 +662,8 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+
+![alt text](66.png)
 
 # check if a file
 cat > ifnested.sh 
@@ -705,7 +712,9 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
+
 ##OUTPUT
+![alt text](67.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -735,6 +744,7 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
+![alt text](68.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -750,6 +760,8 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+
+![alt text](69.png)
 
 # using the case command
 cat >casecheck.sh 
@@ -769,7 +781,10 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+## OUTPUT
+
+![alt text](70.png)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -785,7 +800,10 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
- 
+## OUTPUT
+
+![alt text](71.png)
+
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -797,7 +815,6 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
  
  
 cat forin1.sh 
@@ -859,8 +876,11 @@ echo The next state is $test
 done
 ```
 $ chmod 755 forin1.sh
-
+```
 ## OUTPUT
+
+![alt text](72.png)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -883,6 +903,7 @@ Khammam
 
 ## OUTPUT
 
+![alt text](73.png)
 
 cat forctype.sh 
 ```bash
@@ -892,10 +913,13 @@ for (( i=1; i <= 5; i++ ))
 do
 echo "The value of i is $i"
 done
-````
+```
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
+
 ## OUTPUT
+
+![alt text](74.png)
 
 cat forctype1.sh 
 ```bash
@@ -909,6 +933,8 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+
+![alt text](75.png)
 
 cat fornested1.sh 
 ```bash
@@ -928,6 +954,7 @@ $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
  ## OUTPUT
 
+![alt text](76.png)
  
 cat forbreak.sh 
 ```bash
@@ -943,13 +970,15 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
+## OUTPUT
+
+![alt text](77.png)
  
-cat forbreak.sh 
+cat forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -969,7 +998,9 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+
+![alt text](78.png)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -984,8 +1015,9 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+![alt text](79.png)
 
- cat exread1.sh
+cat exread1.sh
 ```bash
 #!/bin/bash
 # testing the read command
@@ -993,12 +1025,10 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-
+$ ./exread1.sh 
 ## OUTPUT
 
-
-
-$ ./exread1.sh 
+![alt text](80.png)
  
 cat funcex.sh
 ```bash
@@ -1015,12 +1045,11 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
+./funcex.sh 
+./funcex.sh 1 2
 ## OUTPUT
- ./funcex.sh 
 
- 
- ./funcex.sh 1 2
-
+![alt text](81.png)
  
 cat argshift.sh
 ```bash
@@ -1031,9 +1060,10 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-
-## OUTPUT
 $ ./argshift.sh 1 2 3
+## OUTPUT
+
+![alt text](82.png)
  
  cat argshift1.sh
 ```bash
@@ -1049,9 +1079,11 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+## OUTPUT
+
+![alt text](83.png)
+
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1062,9 +1094,10 @@ while (( "$#" )); do
 done
 set +x
 ```
+./argshift.sh 1 2 3
 ## OUTPUT
- ./argshift.sh 1 2 3
  
+ ![alt text](84.png)
  
 cat > nc.awk
 ```bash
@@ -1095,7 +1128,9 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+
+![alt text](85.png)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1123,6 +1158,7 @@ fi
 ```
 ## OUTPUT 
 
+![alt text](86.png)
 
 # RESULT:
 The Commands are executed successfully.
