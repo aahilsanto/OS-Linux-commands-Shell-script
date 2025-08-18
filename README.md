@@ -248,79 +248,83 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
-
+![alt text](29.png)
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+![alt text](30.png)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![alt text](31.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-
+![alt text](32.png)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-
+![alt text](33.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+![alt text](34.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-
+![alt text](35.png)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
+![alt text](36.png)
 
 seq 10 
 ## OUTPUT
 
-
+![alt text](37.png)
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-
+![alt text](38.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-
+![alt text](39.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![alt text](40.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
+![alt text](41.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
+![alt text](42.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![alt text](43.png)
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT
 
+![alt text](44.png)
 
 #Sorting File content
 cat > file21
