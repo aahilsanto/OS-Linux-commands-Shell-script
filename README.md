@@ -427,6 +427,7 @@ chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
 
+![alt text](55.png)
  
 cat << stop > herecheck.txt
 ```
@@ -439,6 +440,7 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
+![alt text](56.png)
 
 cat < scriptest.sh 
 ```bash
@@ -477,12 +479,18 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
+![alt text](57.png)
  
 ls file1
 ## OUTPUT
 
+![alt text](58.png)
+
 echo $?
 ## OUTPUT 
+
+![alt text](59.png)
+
 ./one
 bash: ./one: Permission denied
  
