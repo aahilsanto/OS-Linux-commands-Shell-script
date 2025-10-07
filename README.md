@@ -1158,7 +1158,7 @@ fi
 ```
 ## OUTPUT 
 
-![alt text](86.png)
+![alt text](palindrom.png)
 
 # RESULT:
 The Commands are executed successfully.
